@@ -1,0 +1,4 @@
+Search for cheapest trip
+In order to plan my travel
+As a prospective traveler
+I want to be able to see a sorted list of travel options

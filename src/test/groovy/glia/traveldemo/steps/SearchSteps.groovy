@@ -56,4 +56,9 @@ class SearchSteps {
     def i_see_the_travel_options_by___(String transport) {
         i.see_the_travel_options_by(transport)
     } 
+
+    @Then("i see errors")
+    def i_see_errors() {
+        i.see_errors()
+    } 
 }

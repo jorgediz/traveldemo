@@ -93,12 +93,13 @@ createClass('*:focus','border: 10px red !important;');
     }
 
     def submit_search() {
-        new Actions(driver).moveToElement(search_button)
+        //new Actions(driver).moveToElement(search_button)
 
         search_button.with {            
+            waitUntilEnabled()
             String id = getAttribute("id")
             focus id
-            waitUntilEnabled()
+            waitUntilClickable()
             click()
             
 //            waitUntilClickable()
@@ -127,19 +128,23 @@ createClass('*:focus','border: 10px red !important;');
             sendKeys city
         }
     }
+   
     
-    
-    def List<String> getDefinitions() {
+    List<String> getDefinitions() {
         WebElementFacade definitionList = find By.tagName("ol")
         List<WebElement> results = definitionList.findElements By.tagName("li")
         convert results, toStrings()
     }
 
-    def Converter<WebElement, String> toStrings() {
+    Converter<WebElement, String> toStrings() {
         new Converter<WebElement, String>() {
             public String convert(WebElement from) {
                 from.text
             }
         }
+    }
+
+    def see_errors() {
+        assert findAll(By.cssSelector(".errors,.suggest"))?.size != 1
     }
 }

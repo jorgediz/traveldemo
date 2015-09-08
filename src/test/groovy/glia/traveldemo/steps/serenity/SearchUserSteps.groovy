@@ -85,4 +85,16 @@ class SearchUserSteps extends ScenarioSteps {
 //        )
     }
 
+    @Step
+    def see_errors() {
+        homePage.see_errors()
+//        List prices = resultsPage.prices
+//        assertThat (
+//            Collections.sort(prices), 
+//            contains(prices)
+//        )
+    }
+
+    
+    
 }

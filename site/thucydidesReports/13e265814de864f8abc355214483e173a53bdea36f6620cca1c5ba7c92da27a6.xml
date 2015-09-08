@@ -1,4 +1,4 @@
-<acceptance-test-run title="Need both origin and destination to search" name="Need both origin and destination to search" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="37651" timestamp="2015-09-08T14:03:57.796-03:00">
+<acceptance-test-run title="Need both origin and destination to search" name="Need both origin and destination to search" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="36793" timestamp="2015-09-08T15:33:42.448-03:00">
   <user-story id="search-travel-options" name="Search travel options" path="search_cheapest/SearchCheapestTravel.feature"/>
   <tags>
     <tag name="Search cheapest" type="capability"/>
@@ -8,7 +8,7 @@
     <screenshots>
       <screenshot image="1016ce833d0f0376de0e46ce575d0fe8_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="18209">
+    <test-step result="SUCCESS" duration="19301">
       <screenshots>
         <screenshot image="1016ce833d0f0376de0e46ce575d0fe8_NONE.png"/>
       </screenshots>
@@ -19,7 +19,7 @@
     <screenshots>
       <screenshot image="1016ce833d0f0376de0e46ce575d0fe8_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="5969">
+    <test-step result="SUCCESS" duration="5894">
       <screenshots>
         <screenshot image="04cda654fa2ed265f852a51f04565b5e_NONE.png"/>
       </screenshots>
@@ -30,7 +30,7 @@
     <screenshots>
       <screenshot image="04cda654fa2ed265f852a51f04565b5e_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="3116">
+    <test-step result="SUCCESS" duration="2382">
       <screenshots>
         <screenshot image="04cda654fa2ed265f852a51f04565b5e_NONE.png"/>
       </screenshots>

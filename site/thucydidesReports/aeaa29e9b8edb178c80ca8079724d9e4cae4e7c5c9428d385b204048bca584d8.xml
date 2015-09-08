@@ -1,0 +1,69 @@
+<acceptance-test-run title="Travel by train from Berlin to Prague" name="Travel by train from Berlin to Prague" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="65887" timestamp="2015-09-08T14:04:38.918-03:00">
+  <user-story id="search-travel-options" name="Search travel options" path="search_cheapest/SearchCheapestTravel.feature"/>
+  <tags>
+    <tag name="Search cheapest" type="capability"/>
+    <tag name="Search cheapest/Search travel options" type="feature"/>
+  </tags>
+  <test-group name="Given i am on the home page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="a5c67a869fe7cabc6955cd1ceb253184_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="14784">
+      <screenshots>
+        <screenshot image="a5c67a869fe7cabc6955cd1ceb253184_NONE.png"/>
+      </screenshots>
+      <description>Am on the home page</description>
+    </test-step>
+  </test-group>
+  <test-group name="And i want to go from &apos;Berlin, Germany&apos; to &apos;Prague, Czech Republic&apos;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="9498d11d0f173bd65f373d6822a61f2f_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="5285">
+      <screenshots>
+        <screenshot image="7b9368fea2717428910c54e7f0c9d2f0_NONE.png"/>
+      </screenshots>
+      <description>Go from: &lt;span class=&apos;step-parameter&apos;&gt;Berlin, Germany&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5227">
+      <screenshots>
+        <screenshot image="eab0dc35d934a2236ca47a9b112f87ff_NONE.png"/>
+        <screenshot image="acbcb54803341eeb89592eb53c76beb5_NONE.png"/>
+      </screenshots>
+      <description>Go to: &lt;span class=&apos;step-parameter&apos;&gt;Prague, Czech Republic&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="When i search" result="SUCCESS">
+    <screenshots>
+      <screenshot image="9498d11d0f173bd65f373d6822a61f2f_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="18080">
+      <screenshots>
+        <screenshot image="523fde1e850778c03226de324582f710_NONE.png"/>
+      </screenshots>
+      <description>Search</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then i am on the results page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="523fde1e850778c03226de324582f710_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="4266">
+      <screenshots>
+        <screenshot image="523fde1e850778c03226de324582f710_NONE.png"/>
+      </screenshots>
+      <description>Am on the results page</description>
+    </test-step>
+  </test-group>
+  <test-group name="And i see travel options sorted by price" result="SUCCESS">
+    <screenshots>
+      <screenshot image="523fde1e850778c03226de324582f710_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1907">
+      <screenshots>
+        <screenshot image="523fde1e850778c03226de324582f710_NONE.png"/>
+      </screenshots>
+      <description>See travel options sorted by price</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

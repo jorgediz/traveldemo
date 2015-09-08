@@ -80,8 +80,7 @@ class UserSteps extends ScenarioSteps {
 
     def assert_list_is_sorted(List<BigDecimal> original) {
         List<BigDecimal> sorted = new ArrayList<BigDecimal>(original)
-        //Collections.sort(sortedPrices)
-        Collections.sort(sorted, Collections.reverseOrder())
+        Collections.sort(sorted)
         BigDecimal[] sortedArray = (BigDecimal[]) sorted.toArray()
         
         assertThat (

@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Search travel options" skipped="0" tests="2" time="106.8" timestamp="2015-09-251 11:38:09"><testcase name="Need both origin and destination to search"/><testcase name="Travel by train from Berlin to Prague"/></testsuite>

@@ -20,6 +20,8 @@ import static ch.lambdaj.Lambda.convert
 @CompileStatic
 @DefaultUrl("http://www.goeuro.com")
 class HomePage extends PageObject {
+    Actions actions
+    
     @FindBy(id="header-langswitch")
     WebElementFacade language_selection
     
@@ -41,24 +43,26 @@ class HomePage extends PageObject {
     @FindBy(className="search-page")
     WebElementFacade body
 
-    def in_page() {
+    def on_the_page() {
         open()
         shouldBeDisplayed()
         waitFor body
+        actions = new Actions(driver)
+        
 
-        String highlight_element_in_focus = """
-function createClass(name,rules){
-    var style = document.createElement('style');
-    style.type = 'text/css';
-    document.getElementsByTagName('head')[0].appendChild(style);
-    if(!(style.sheet||{}).insertRule) 
-        (style.styleSheet || style.sheet).addRule(name, rules);
-    else
-        style.sheet.insertRule(name+"{"+rules+"}",0);
-}
-createClass('*:focus','border: 10px red !important;');        
-"""
-        evaluateJavascript highlight_element_in_focus
+//        String highlight_element_in_focus = """
+//function createClass(name,rules){
+//    var style = document.createElement('style');
+//    style.type = 'text/css';
+//    document.getElementsByTagName('head')[0].appendChild(style);
+//    if(!(style.sheet||{}).insertRule) 
+//        (style.styleSheet || style.sheet).addRule(name, rules);
+//    else
+//        style.sheet.insertRule(name+"{"+rules+"}",0);
+//}
+//createClass('*:focus','border: 10px red !important;');        
+//"""
+//        evaluateJavascript highlight_element_in_focus
     }
     
     def uncheck_hotel_checkboxes() {
@@ -68,51 +72,50 @@ createClass('*:focus','border: 10px red !important;');
     }
     
     
-    def choose_language(String language) {
-        new Actions(driver).moveToElement(language_selection)
+    def prefer_language(String language) {
+        actions.moveToElement(language_selection)
 
         language_selection.with {
-            find By.className("dropdown-sel-val") click()        
-            WebElementFacade selection = find By.id("lang-switch--"+language) 
-            focus("lang-switch--"+language)
+            find By.className("dropdown-sel-val") click()
+            String selection_id = "lang-switch--"+language
+            
+            WebElementFacade selection = find By.id(selection_id) 
+            focus selection_id
+            selection.waitUntilClickable()
             selection.click()
             selection.click()
         }
     }
 
-    def choose_currency(String currency) {
-        new Actions(driver).moveToElement(currency_selection)
+    def prefer_currency(String currency) {
+        actions.moveToElement(currency_selection)
 
         currency_selection.with {
             find By.className("dropdown-sel-val") click()
-            WebElementFacade selection = find By.id("currency-switch--"+currency)
-            focus("currency-switch--"+currency)
+            String selection_id = "currency-switch--"+currency
+
+            WebElementFacade selection = find By.id(selection_id)
+            focus selection_id
+            selection.waitUntilClickable()
             selection.click()
             selection.click()
         }        
     }
 
-    def submit_search() {
-        //new Actions(driver).moveToElement(search_button)
-
-        search_button.with {            
+    def search() {
+        search_button.with {
+            actions.moveToElement it
             waitUntilEnabled()
             String id = getAttribute("id")
             focus id
             waitUntilClickable()
             click()
-            
-//            waitUntilClickable()
-//            waitUntilEnabled()
-//            focus id
-//            click()
-//            waitABit(5000)            
         }
     }
 
     def focus(String id) {
         evaluateJavascript "document.getElementById('"+id+"').focus()"        
-        waitABit(2000)
+        waitABit(1000)
     }
     
     def from(String city) {

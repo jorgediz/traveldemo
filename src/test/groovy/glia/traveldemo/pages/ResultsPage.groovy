@@ -64,9 +64,10 @@ class ResultsPage extends PageObject {
         }
     }
     
-    def in_page() {
+    def on_the_page() {
+        driver.switchTo().defaultContent()
         waitFor body
-        focus("results")
+        focus "results"
     }
     
     def focus(String id) {

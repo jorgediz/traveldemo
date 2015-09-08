@@ -1,6 +1,4 @@
 /.nb-gradle/
 /.gradle/
-/target/
 /build/
 /*.log
-

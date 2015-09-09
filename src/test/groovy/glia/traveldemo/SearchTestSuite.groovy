@@ -14,5 +14,5 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features="src/test/resources/features/search_cheapest/SearchCheapestTravel.feature")
 class SearchTestSuite {
     @ClassRule
-    public static Timeout globalTimeout = new Timeout(5, TimeUnit.MINUTES);
+    public static Timeout globalTimeout = new Timeout(20, TimeUnit.MINUTES);
 }

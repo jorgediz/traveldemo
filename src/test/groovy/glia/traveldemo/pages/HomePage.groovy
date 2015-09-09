@@ -14,14 +14,14 @@ import net.serenitybdd.core.annotations.findby.FindBy
 import net.thucydides.core.pages.PageObject
 
 import java.util.List
+import java.util.concurrent.TimeUnit
+
 
 import static ch.lambdaj.Lambda.convert
 
 @CompileStatic
 @DefaultUrl("http://www.goeuro.com")
 class HomePage extends PageObject {
-    Actions actions
-    
     @FindBy(id="header-langswitch")
     WebElementFacade language_selection
     
@@ -37,32 +37,27 @@ class HomePage extends PageObject {
     @FindBy(id="to_filter")
     WebElementFacade to_filter_input
     
+    @FindBy(className="analytics-oneway-trip-btn")
+    WebElementFacade one_way    
+    
+    @FindBy(className="analytics-round-trip-btn")
+    WebElementFacade round_trip    
+
     @FindBy(className="hotel-checkboxes")
     WebElementFacade hotel_checkboxes
 
     @FindBy(className="search-page")
     WebElementFacade body
 
+    String handle
+    
     def on_the_page() {
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS)
+        
         open()
         shouldBeDisplayed()
+        this.handle = driver.windowHandle
         waitFor body
-        actions = new Actions(driver)
-        
-
-//        String highlight_element_in_focus = """
-//function createClass(name,rules){
-//    var style = document.createElement('style');
-//    style.type = 'text/css';
-//    document.getElementsByTagName('head')[0].appendChild(style);
-//    if(!(style.sheet||{}).insertRule) 
-//        (style.styleSheet || style.sheet).addRule(name, rules);
-//    else
-//        style.sheet.insertRule(name+"{"+rules+"}",0);
-//}
-//createClass('*:focus','border: 10px red !important;');        
-//"""
-//        evaluateJavascript highlight_element_in_focus
     }
     
     def uncheck_hotel_checkboxes() {
@@ -71,67 +66,69 @@ class HomePage extends PageObject {
         }   
     }
     
+    def go_one_way() {
+        one_way.with {
+            new Actions(driver).moveToElement(it).click().perform()
+        }
+    }
+
+    def go_round_trip() {
+        round_trip.with {
+            new Actions(driver).moveToElement(it).click().perform()
+        }
+    }
     
     def prefer_language(String language) {
-        actions.moveToElement(language_selection)
-
         language_selection.with {
+            new Actions(driver).moveToElement(it).perform()
+            
             find By.className("dropdown-sel-val") click()
             String selection_id = "lang-switch--"+language
             
             WebElementFacade selection = find By.id(selection_id) 
-            focus selection_id
-            selection.waitUntilClickable()
-            selection.click()
-            selection.click()
+            new Actions(driver).moveToElement(selection).clickAndHold().release().perform()
         }
     }
 
     def prefer_currency(String currency) {
-        actions.moveToElement(currency_selection)
-
         currency_selection.with {
+            new Actions(driver).moveToElement(it).perform()
+
             find By.className("dropdown-sel-val") click()
             String selection_id = "currency-switch--"+currency
 
             WebElementFacade selection = find By.id(selection_id)
-            focus selection_id
-            selection.waitUntilClickable()
-            selection.click()
-            selection.click()
+            new Actions(driver).moveToElement(selection).clickAndHold().release().perform()
         }        
     }
 
     def search() {
         search_button.with {
-            actions.moveToElement it
-            waitUntilEnabled()
-            String id = getAttribute("id")
-            focus id
             waitUntilClickable()
-            click()
+            focus it
+            new Actions(driver).moveToElement(it).clickAndHold().release().perform()
         }
     }
 
-    def focus(String id) {
-        evaluateJavascript "document.getElementById('"+id+"').focus()"        
-        waitABit(1000)
+    def focus(WebElementFacade element) {
+        String id = element.getAttribute "id"
+        evaluateJavascript "document.getElementById('"+id+"').focus()"
+        waitABit 1000
     }
     
     def from(String city) {
         from_filter_input.with {
-            focus "from_filter"
+            focus it
             sendKeys city
         }
     }
 
     def to(String city) {
         to_filter_input.with {
-            focus "to_filter"
+            focus it
             sendKeys city
         }
-    }
-   
+    }   
     
     List<String> getDefinitions() {
         WebElementFacade definitionList = find By.tagName("ol")

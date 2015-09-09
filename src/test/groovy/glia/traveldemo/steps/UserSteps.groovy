@@ -20,11 +20,8 @@ class UserSteps extends ScenarioSteps {
 
     HomePage homePage
     ResultsPage resultsPage
-
-    //    @Step
-    //    def should_see_definition(String definition) {
-    //        assertThat page.definitions, hasItem(containsString(definition))
-    //    }
+    
+    String transport
 
     @Step
     def am_on_the_home_page() {
@@ -69,6 +66,7 @@ class UserSteps extends ScenarioSteps {
 
     @Step
     def see_travel_options_by(String transport) {
+        travel_by transport
         List prices = resultsPage.prices
         assert_list_is_sorted prices
     }
@@ -78,9 +76,27 @@ class UserSteps extends ScenarioSteps {
         homePage.see_errors()
     }
 
+    @Step
+    def go_round_trip() {
+        homePage.go_round_trip()
+    }
+    
+    @Step
+    def go_one_way() {
+        homePage.go_one_way()
+    }
+
+    @Step
+    def travel_by(String transport) {
+        resultsPage.travel_by(transport)
+        this.transport = transport
+    }
+    
     def assert_list_is_sorted(List<BigDecimal> original) {
         List<BigDecimal> sorted = new ArrayList<BigDecimal>(original)
-        Collections.sort(sorted)
+        Collections.sort(sorted
+            //, Collections.reverseOrder()
+        )
         BigDecimal[] sortedArray = (BigDecimal[]) sorted.toArray()
         
         assertThat (

@@ -36,6 +36,21 @@ class UserSentences {
         i.prefer_currency currency
     }
 
+    @And("i travel by '(.*)'")
+    def i_travel_by___ (String transport) {
+        i.travel_by transport
+    }
+
+    @And("i go one way")
+    def i_go_one_way () {
+        i.go_one_way()
+    }
+    
+    @And("i go round trip")
+    def i_go_round_trip () {
+        i.go_round_trip()
+    }
+    
     @When("i search")
     def i_search () {
         i.search()

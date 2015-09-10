@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Search travel options","Round trip","SUCCESS","2015-09-10T05:57:36.993-03:00","0.0","84.54"
+"Search travel options","Search in different languages","SUCCESS","2015-09-10T05:47:25.749-03:00","0.0","153.86"
+"Search travel options","Travel by different transports","SUCCESS","2015-09-10T05:50:12.149-03:00","0.0","240.75"
+"Search travel options","Travel from Berlin to Prague. default options","SUCCESS","2015-09-10T05:43:00.819-03:00","0.0","90.58"
+"Search travel options","Travel from and to different cities","SUCCESS","2015-09-10T05:44:40.008-03:00","0.0","147.1"
+"Search travel options","Using different currencies","SUCCESS","2015-09-10T05:54:27.176-03:00","0.0","178.76"

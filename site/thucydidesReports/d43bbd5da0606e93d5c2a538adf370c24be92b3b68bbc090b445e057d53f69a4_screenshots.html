@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="6078ab8ee58345116221c47772af6065e8d400719fc56307c9c8ec5f9856919b.html">Search Travel Options</a>
+                > <a
+                    href="d43bbd5da0606e93d5c2a538adf370c24be92b3b68bbc090b445e057d53f69a4.html">Search in different languages </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-09-2015 05:59</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+    <!--
+    <div id="contentbody">
+        <div class="titlebar">
+        <div class="story-title">
+            <table width="1005">
+                <td width="50"><img class="story-outcome-icon" src="images/success.png" width="25" height="25"/> </td>
+                <td width="%"><span class="test-case-title"><span
+                        class="success-color">Search in different languages<span class="related-issue-title"></span></span></span>
+                </td>
+                <td width="100"><span class="test-case-duration"><span class="greentext">153.86s</span></span>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <a class="tagLink" href="fee16ce1e5bb75ad8a07c45fbbf9443dca17ab05d57c24d3412410d3eb2e8940.html">Search Cheapest (capability)</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+-->
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-comments-o"></i>
+                                    <span class="story-header-title">Search Travel Options</span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                  In order to plan my travel<br>  As a prospective traveler<br>  I want to see a list of travel options sorted by price
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="74d3ea634d7047899317f5fda4d645e6d53a7c92490d40c4110b0df7845f2bfa.html">Search Cheapest
+                                    (capability)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><img class="story-outcome-icon"
+                                                            src="images/success.png"/></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Search in different languages
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+
+        <div class="scenario">Given i am on the home page<br>And i prefer 'es' as language<br>And i want to go from 'Berlín, Alemania' to 'Praga, República Checa'<br>When i search<br>Then i am on the results page<br>And i see travel options sorted by price</div>
+
+    </div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="5eee6226cfee206be4c16d46fc9ba48e_NONE.png" alt=""
+                     title="Am on the home page" width="1008"/>
+                <img src="5eee6226cfee206be4c16d46fc9ba48e_NONE.png" alt=""
+                     title="Prefer language: &lt;span class='step-parameter'&gt;es&lt;/span&gt;" width="1008"/>
+                <img src="afdc68ecf35b0f9e87d7987890d22843_NONE.png" alt=""
+                     title="Prefer language: &lt;span class='step-parameter'&gt;es&lt;/span&gt;" width="1008"/>
+                <img src="6205b042a80f2b741bb300f0c021deee_NONE.png" alt=""
+                     title="Go from: &lt;span class='step-parameter'&gt;Berl&iacute;n, Alemania&lt;/span&gt;" width="1008"/>
+                <img src="429d4e2bfc8a5bbb36f0867faa017112_NONE.png" alt=""
+                     title="Go from: &lt;span class='step-parameter'&gt;Berl&iacute;n, Alemania&lt;/span&gt;" width="1008"/>
+                <img src="a82d05f8ce3fa5b45a41e5c020415740_NONE.png" alt=""
+                     title="Go to: &lt;span class='step-parameter'&gt;Praga, Rep&uacute;blica Checa&lt;/span&gt;" width="1008"/>
+                <img src="6d619fb2b5266ed5079825dc47b3867a_NONE.png" alt=""
+                     title="Go to: &lt;span class='step-parameter'&gt;Praga, Rep&uacute;blica Checa&lt;/span&gt;" width="1008"/>
+                <img src="89c5ad4b92e2ea6495d4d05d5bf4b986_NONE.png" alt=""
+                     title="Search" width="1008"/>
+                <img src="6b52631bc7cd4a0687f7c1e04e616c49_NONE.png" alt=""
+                     title="Search" width="1008"/>
+                <img src="b16d2736943cd0e005052872b922f49c_NONE.png" alt=""
+                     title="Am on the results page" width="1008"/>
+                <img src="855f3805168a7166ba5eae42f9878da4_NONE.png" alt=""
+                     title="Am on the results page" width="1008"/>
+                <img src="855f3805168a7166ba5eae42f9878da4_NONE.png" alt=""
+                     title="See travel options sorted by price" width="1008"/>
+                <img src="99f32aeb25da89e021fa91d029e069b1_NONE.png" alt=""
+                     title="Am on the home page" width="1008"/>
+                <img src="99f32aeb25da89e021fa91d029e069b1_NONE.png" alt=""
+                     title="Prefer language: &lt;span class='step-parameter'&gt;de&lt;/span&gt;" width="1008"/>
+                <img src="b905b9f8f9d528d466fbeed2cf957723_NONE.png" alt=""
+                     title="Prefer language: &lt;span class='step-parameter'&gt;de&lt;/span&gt;" width="1008"/>
+                <img src="5878cda3793b320cdb16df0d2ce08d7d_NONE.png" alt=""
+                     title="Go from: &lt;span class='step-parameter'&gt;Berlin, Deutschland&lt;/span&gt;" width="1008"/>
+                <img src="b0edfdb0f3e86076e888277d9094ccdf_NONE.png" alt=""
+                     title="Go from: &lt;span class='step-parameter'&gt;Berlin, Deutschland&lt;/span&gt;" width="1008"/>
+                <img src="b3ad9cbff2a2657e6ac84510229737d2_NONE.png" alt=""
+                     title="Go to: &lt;span class='step-parameter'&gt;Prag, Tschechien&lt;/span&gt;" width="1008"/>
+                <img src="9f6aa0fd2c068e6ffa9eaa53f77c1fc5_NONE.png" alt=""
+                     title="Go to: &lt;span class='step-parameter'&gt;Prag, Tschechien&lt;/span&gt;" width="1008"/>
+                <img src="b96c8f53ed1bdecf92308d76f2691384_NONE.png" alt=""
+                     title="Search" width="1008"/>
+                <img src="8dfab63c248106bbf7d4e2eb3225e98f_NONE.png" alt=""
+                     title="Search" width="1008"/>
+                <img src="c221d49d2d68d95cb9796e44a68f5ad2_NONE.png" alt=""
+                     title="Am on the results page" width="1008"/>
+                <img src="d6fc5eb4f35fd2b27e16edef89b54574_NONE.png" alt=""
+                     title="Am on the results page" width="1008"/>
+                <img src="d6fc5eb4f35fd2b27e16edef89b54574_NONE.png" alt=""
+                     title="See travel options sorted by price" width="1008"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.1.9</span>
+</div>
+</body>
+</html>

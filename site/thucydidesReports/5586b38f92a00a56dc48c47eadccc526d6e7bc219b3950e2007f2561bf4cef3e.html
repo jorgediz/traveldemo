@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Using different currencies</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script><!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+            > <a href="6213f8152b8bd25bb2951fb4a097514593d07ddaff14e7c5b02a917ec3fbf8ab.html">Search Cheapest</a>
+            > <a href="807db6b2dffcce216e49165b0ee0cf4605c5862cd8f2f83f2d703a2d5b59fb84.html">Search Travel Options</a>
+            > Using different currencies
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-09-2015 05:59</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-comments-o"></i>
+                                    <span class="story-header-title">Search Travel Options</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                  In order to plan my travel<br>  As a prospective traveler<br>  I want to see a list of travel options sorted by price
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="6213f8152b8bd25bb2951fb4a097514593d07ddaff14e7c5b02a917ec3fbf8ab.html">Search Cheapest
+                                    (capability)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><img class="story-outcome-icon"
+                                                            src="images/success.png"/></span>
+                            <span class="test-case-title">
+
+                                <span class="success-color">Using Different Currencies
+                                    <span class="related-issue-title"></span>
+                            </span>
+                        </span>
+                            <span style="float:right"><img src="images/driver-firefox.png" height="20"
+                                                           alt="firefox"
+                                                           title="firefox"/></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3 class="story-header">Scenario:</h3>
+
+        <div class="scenario">Given i am on the home page<br>And i prefer 'en' as language<br>And i prefer 'EUR' as currency<br>And i want to go from 'Berlin, Germany' to 'Prague, Czech Republic'<br>When i search<br>Then i am on the results page<br>And i see travel options sorted by price</div>
+
+    </div>
+
+    <div id="beforetable"></div>
+
+
+
+        <h3 class="story-header">Examples:</h3>
+            <div class="requirementNarrative"></div>
+        <div class="example-table">
+            <table>
+                <thead>
+                <tr>
+                        <th>Currency</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#0">EUR</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#1">CHF</a>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">
+                        &nbsp;
+                    </th>
+
+                    <th width="%" class="step-description-column greentext">
+                        Steps
+                    </th>
+                    <th width="120" class="greentext">Screenshot</th>
+                    <th width="100" class="greentext">Outcome</th>
+                    <th width="75" class="greentext">Duration</th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection0"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {currency=EUR}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">88.1s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given i am on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">16.67s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Am on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=0">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="5eee6226cfee206be4c16d46fc9ba48e_NONE.png"
+                                         href="5eee6226cfee206be4c16d46fc9ba48e_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">14.99s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And i prefer 'en' as language</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">12.34s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Prefer language: <span class='step-parameter'>en</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=1">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="5eee6226cfee206be4c16d46fc9ba48e_NONE.png"
+                                         href="5eee6226cfee206be4c16d46fc9ba48e_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.75s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And i prefer 'EUR' as currency</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">12.13s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Prefer currency: <span class='step-parameter'>EUR</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=3">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="f67d8deb1b5e3fd008f19c81a1072ea2_NONE.png"
+                                         href="f67d8deb1b5e3fd008f19c81a1072ea2_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">4.53s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And i want to go from 'Berlin, Germany' to 'Prague, Czech Republic'</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">13.22s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Go from: <span class='step-parameter'>Berlin, Germany</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=5">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="e4b576a5411f65a13dcc694ac945411d_NONE.png"
+                                         href="e4b576a5411f65a13dcc694ac945411d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">5.45s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Go to: <span class='step-parameter'>Prague, Czech Republic</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=7">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="70e374de9ab74a8fd3fd99b2ce65c397_NONE.png"
+                                         href="70e374de9ab74a8fd3fd99b2ce65c397_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">4.65s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When i search</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">25.26s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Search</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=9">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="e295e29113564346c0c3d15e34c378a1_NONE.png"
+                                         href="e295e29113564346c0c3d15e34c378a1_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">16.68s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then i am on the results page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">4.55s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Am on the results page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=11">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="0c41c673c9d2a5f79775acc22bcfdd55_NONE.png"
+                                         href="0c41c673c9d2a5f79775acc22bcfdd55_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.39s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And i see travel options sorted by price</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.34s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">See travel options sorted by price</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=13">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="0623fda6c7b435f0a29819039387dbec_NONE.png"
+                                         href="0623fda6c7b435f0a29819039387dbec_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.08s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection1"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {currency=CHF}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">90.31s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given i am on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">16.43s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Am on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=14">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="99f32aeb25da89e021fa91d029e069b1_NONE.png"
+                                         href="99f32aeb25da89e021fa91d029e069b1_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">14.62s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And i prefer 'en' as language</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">12.69s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Prefer language: <span class='step-parameter'>en</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=15">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="99f32aeb25da89e021fa91d029e069b1_NONE.png"
+                                         href="99f32aeb25da89e021fa91d029e069b1_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">4.43s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And i prefer 'CHF' as currency</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">13.37s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Prefer currency: <span class='step-parameter'>CHF</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=17">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="34df754fbae78766d149eac80ba36699_NONE.png"
+                                         href="34df754fbae78766d149eac80ba36699_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">4.13s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And i want to go from 'Berlin, Germany' to 'Prague, Czech Republic'</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">13.47s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Go from: <span class='step-parameter'>Berlin, Germany</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=19">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="0461248b9249cd8d3c404435f2dd6bb0_NONE.png"
+                                         href="0461248b9249cd8d3c404435f2dd6bb0_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">5s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Go to: <span class='step-parameter'>Prague, Czech Republic</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=21">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="99be82141789cdffff62399e2d9134e5_NONE.png"
+                                         href="99be82141789cdffff62399e2d9134e5_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">5.21s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When i search</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">25.99s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Search</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=23">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="616fd93ca38282f67100c1a0047cb00f_NONE.png"
+                                         href="616fd93ca38282f67100c1a0047cb00f_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">17.08s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then i am on the results page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">4.5s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Am on the results page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=25">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="fa8eb6dccaeddd89bac38b5a6e8f792b_NONE.png"
+                                         href="fa8eb6dccaeddd89bac38b5a6e8f792b_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.21s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And i see travel options sorted by price</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.28s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">See travel options sorted by price</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="5586b38f92a00a56dc48c47eadccc526d6e7bc219b3950e2007f2561bf4cef3e_screenshots.html#screenshots?screenshot=27">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="693c8c85b721bd4366b6449de0367800_NONE.png"
+                                         href="693c8c85b721bd4366b6449de0367800_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.1s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td colspan="2"></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>178.76s</em></span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div id="beforefooter"></div>
+    <div id="bottomfooter">
+        <span class="version">Serenity BDD version 1.1.9</span>
+    </div>
+
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+            var imgsrc = $(".img" + divId).attr('src');
+            if (imgsrc == 'images/plus.png') {
+                $(".img" + divId).attr("src", function () {
+                    return "images/minus.png";
+                });
+
+            }
+            else {
+                $(".img" + divId).attr("src", function () {
+                    return "images/plus.png";
+                });
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        $('.example-table table').DataTable({
+            "order": [
+                [1, "asc"]
+            ],
+            "pageLength": 25,
+            "scrollX": "100%",
+            "scrollXInner": "100%",
+            "scrollCollapse": true
+        });
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        $(document).ready(function () {
+            $('img.screenshot').imgPreview({
+                imgCSS: {
+                    width: '500px'
+                },
+                distanceFromCursor: {top: 10, left: -200}
+            });
+        });
+
+        //]]>
+    </script>
+    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+            src="" style="display: none; "></div>
+    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+        <img style="width: 200px; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</body>
+</html>
